@@ -6,6 +6,7 @@
         <!-- Il nome della Persistence Unit è importante perché nel codice Java dovremo richiamarla per nome-->
 
         <!-- TODO: Aggiungi elenco delle entities -->
+        <class>sabatinoprovenza.entities.Evento</class>
 
         <properties>
             <property name="jakarta.persistence.jdbc.url"
