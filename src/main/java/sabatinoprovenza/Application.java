@@ -20,6 +20,26 @@ public class Application {
         EventoDAO eventoDAO = new EventoDAO(entityManager);
 
         Evento evento1 = new Evento("festa", LocalDate.now(), "festa a sorpresa", TipoEvento.PRIVATO, 30);
-        // eventoDAO.save(evento1);
+        Evento evento2 = new Evento("matrimonio", LocalDate.now().plusMonths(5), "matrimonio al castello delle cerimonie", TipoEvento.PRIVATO, 60);
+
+        // METODO SAVE
+        //eventoDAO.save(evento2);
+
+
+        // METODO GETBYID
+//        try {
+//            Evento eventoStampato = eventoDAO.getById(3);
+//            System.out.println(eventoStampato);
+//        } catch (NotFoundException e) {
+//            System.out.println(e.getMessage());
+//        }
+
+        // METODO DELETE
+//        try {
+//            eventoDAO.delete(3);
+//        } catch (NotFoundException e) {
+//            System.out.println(e.getMessage());
+//        }
+
     }
 }
